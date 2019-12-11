@@ -46,6 +46,7 @@ int zxgbs(int m,int n) {
         }
     return i;
 }
+
 int main() {
     int m,n;
     scanf("%d %d",&m,&n);
