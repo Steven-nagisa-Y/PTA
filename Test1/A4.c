@@ -22,7 +22,7 @@ int main() {
     b = num / 10 % 10;
     c = num / 100 % 10;
     int sb;
-    sb = a*100+b*10+c;
+    sb = a * 100 + b * 10 + c;
     printf("%d",sb);
     return 0;
 }
