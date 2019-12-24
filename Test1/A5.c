@@ -18,7 +18,7 @@ int main(){
     double sum,ave;
     int a,b,c,d;
     scanf("%d %d %d %d",&a,&b,&c,&d);
-    sum = a+b+c+d;
+    sum = a + b + c + d;
     ave = sum / 4;
     printf("Sum = %.0f; Average = %.1f",sum,ave);
     return 0;
