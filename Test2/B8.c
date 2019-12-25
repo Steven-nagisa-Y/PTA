@@ -43,32 +43,29 @@ Not An Equation
 #include <stdio.h>
 #include <math.h>
 // Not edited by Steven
-int main(){
+int main() {
     double a,b,c,num1,num2;
     scanf("%lf %lf %lf",&a,&b,&c);
-    num1=-b;
-    num2=b*b-4*a*c;
-    if(a==0&&b==0&&c!=0){
+    num1 = -b;
+    num2 = b * b - 4 * a * c;
+    if (a==0 && b==0 && c!=0){
         printf("Not An Equation");
-    }
-    else if(a==0&&b==0&&c==0){
+    } else if (a==0 && b==0 && c==0) {
         printf("Zero Equation");
-    }
-    else if(a==0){
-            printf("%.2f",-c/b);
-    }
-    else if(num2==0){
+    } else if (a == 0) {
+        printf("%.2f",-c/b);
+    } else if(num2 == 0) {
         printf("%.2f",num1/(2*a));
-    }else if(num2>0){
+    } else if (num2 > 0) {
         printf("%.2f\n",num1/(2*a)+sqrt(num2)/(2*a));
         printf("%.2f",num1/(2*a)-sqrt(num2)/(2*a));
-    } else{
-        if(num1==0){
+    } else {
+        if (num1==0) {
             printf("0.00+%.2fi\n",sqrt(-num2)/(2*a));
             printf("0.00-%.2fi\n",sqrt(-num2)/(2*a));
-        }else{
+        } else {
             printf("%.2f+%.2fi\n",num1/(2*a),sqrt(-num2)/(2*a));
-                printf("%.2f-%.2fi",num1/(2*a),sqrt(-num2)/(2*a));
+            printf("%.2f-%.2fi",num1/(2*a),sqrt(-num2)/(2*a));
         }
     }
     return 0;
