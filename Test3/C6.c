@@ -21,13 +21,13 @@ int main() {
 	int letter = 0, blank = 0, digit = 0, other = 0;
 	int i;
 	char ch;
-	for(i=0;i<10;i++) {
-    	ch=getchar();
-    	if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+	for(i=0; i<10; i++) {
+    	ch = getchar();
+    	if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))
         	letter++;
-    	else if(ch>='0'&&ch<='9')
+    	else if(ch>='0' && ch<='9')
         	digit++;
-    	else if(ch == ' ' || ch == '\n')
+    	else if(ch==' ' || ch=='\n')
         	blank++;
     	else
         	other++;
