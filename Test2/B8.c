@@ -42,6 +42,7 @@ Not An Equation
 */
 #include <stdio.h>
 #include <math.h>
+// Not edited by Steven
 int main(){
     double a,b,c,num1,num2;
     scanf("%lf %lf %lf",&a,&b,&c);
