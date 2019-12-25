@@ -22,14 +22,14 @@ int main() {
     int N;
     int i,j,m=0;
     scanf("%d",&N);
-    for(j=1;j<=100;j++) {
-        for(i=1;i<=100;i++)
-        if((i*i+j*j == N)&&(j < i)) {
-            printf("%d %d\n",j,i);
-            ++m;
-        }
+    for (j=1;j<=100;j++) {
+        for (i=1;i<=100;i++)
+            if ((i*i+j*j == N) && (j < i)) {
+                printf("%d %d\n",j,i);
+                ++m;
+            }
     }
-    if(m==0) {
+    if (m==0) {
         printf("No Solution");
 	}
 }
