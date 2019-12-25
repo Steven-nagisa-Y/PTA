@@ -23,7 +23,7 @@ int zdgys(int m,int n) {
     }
     i = n;
     while (i > 0) {
-        if (m % i == 0 && n % i ==0){
+        if (m % i == 0 && n % i == 0){
             break;
         } else {
             i--;
@@ -34,14 +34,13 @@ int zdgys(int m,int n) {
 
 int zxgbs(int m,int n) {
     int temp, i;
-    if(m<n)
-    {
+    if (m < n) {
         temp = m;
         m = n;
         n = temp;
     }
-    for(i=m; i>0; i++) {
-        if(i%m==0 && i%n==0)
+    for (i=m; i>0; i++) {
+        if(i % m == 0 && i % n == 0)
             break;
         }
     return i;

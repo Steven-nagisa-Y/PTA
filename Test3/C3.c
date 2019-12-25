@@ -27,7 +27,7 @@ int main() {
     b = 1;
     item = 1.0;
     do {
-        item = a * 1.0 /b;
+        item = a * 1.0 / b;
         sum += item;
         a = -a;
         b = b + 3;
