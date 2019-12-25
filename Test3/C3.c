@@ -17,6 +17,8 @@ sum = 0.854457
 sum = 0.826310
 */
 #include <stdio.h>
+#include <math.h>
+
 int main() {
     double sum, eps ,item;
     int a, b;
